@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>афтограф</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="f:/2018HTML/2018 RFERL/gauge/raphael-2.1.4.min.js"></script>
+<script src="f:/2018HTML/2018 RFERL/gauge/justgage.js"></script>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("f:/2018HTML/2018 RFERL/fakt-zanna-crop.png");
+
+    /* Full height */
+    height: 33%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+}
+
+.flexcontainer{
+		display:flex;
+		flex-wrap: nowrap;
+		align-items:center;
+		justify-content:space-around;
+		padding:10px;
+		text-align:center;
+        background: #ddd;
+	}
+.photo{
+    background: url("f:/2018HTML/2018 RFERL/luka-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    }
+
+.teaser{
+    box-shadow:3px 3px 3px 3px #555;
+    width: 650px;
+    text-align: left;
+    padding:10px;
+    font-family: sans-serif;
+
+}
+.caption{
+    font-weight: bold;
+    font-style: oblique;
+}
+.answer{
+    margin:30px auto;
+    width: 850px;
+    
+}
+button{
+    margin :auto;
+}
+#gauge{
+    width: 200px;
+    height: 160px;
+}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<h1>
+    Ці вырас вайсковы патэнцыял суседзяў Беларусі за апошнія гады?
+</h1>
+<div class="wrapper flexcontainer">
+    <div>
+        <div class="photo"></div>
+    </div>
+    <div class="teaser">
+        «Нас вельмі непакояць спэкуляцыі некаторых краінаў на тэму ядзернай зброі, мілітарызацыя Ўсходнеэўрапейскага рэгіёну, а таксама беспрэцэдэнтнае нарошчваньне вайсковага патэнцыялу нашых краінаў-суседзяў. Гэта тычыцца як павелічэньня колькасьці іхных узброеных сілаў, так і выдаткаў на абарону»
+        <p class="caption">Аляксандар Лукашэнка, 13 лютага, нарада Рады бясьпекі Беларусі
+        </p>
+    </div>
+ <div>
+
+   
+ <div id="gauge" onclick="hunder()" class="200x160px">
+       
+ </div>
+     <!-- <button  onclick="hunder()">націсні каб даведацца праўду onmouseover="hunder()" onmouseout="hunder2()"</button>-->
+     
+
+ </div>
+</div>
+<div class="answer">
+    <h3>Насамрэч:</h3>
+        <p>Рост вайсковых патэнцыялаў суседзяў Беларусі за апошнія гады — зьява, якая мае прэцэдэнты. Аднак толькі ў часах, калі дзяржавы пасьля распаду СССР фактычна толькі паўставалі, стваралі свае ўласныя ўзброеныя сілы, перажывалі востры сацыяльна-эканамічны крызіс. Зараз рост арміяў тлумачыцца не хаосам, а наадварот — новым парадкам, парадкам канфрантацыі.</p>
+        <p>Паводле дадзеных International Institute for Strategic Studies колькасьць польскага і латвійскага войскаў за тры гады не зьмянілася наагул (172 тысячы і 5 тысячаў адпаведна), колькасьць літоўскіх узброеных сілаў вырасла на 20%, украінскіх — на 19%, расейскіх — на 9%.</p>
+        <p>Аднак цяперашняе павялічэньне складу арміяў — зусім не беспрэцэдэнтнае. У 1994-1995 гадах, падчас першай чачэнскай вайны, расейскае войска павялічылася на 28%, дасягнуўшы лічбы у мільён 800 тысячаў салдатаў. У выніку росту колькасьці войска РФ у апошнія гады яно дасягнула лічбы мільён 490 тысячаў у 2015 годзе, менш чым было ў 1995 годзе. Колькасьць літоўскага войска з 1997 году па 2005 год вырасла амаль у тры разы.</p>
+</div>
+    <script>
+var bol=true;
+var answer=9;//percent of true!
+  var g = new JustGage({
+    id: "gauge",
+    value: 67,
+    min: 0,
+	 pointer: true,
+	  pointerOptions: {
+          toplength: 0,
+          bottomlength: 10,
+          bottomwidth: 12,
+          color: '#EA6903',
+          stroke: '#EDEBEB',
+          stroke_width: 3,
+          stroke_linecap: 'round'
+        },
+	 customSectors: [{
+          color: '#00ff00',
+          lo: 66,
+          hi: 100
+        }, {
+          color: '#ff0000',
+          lo: 0,
+          hi: 33
+        }
+		, {
+          color: '#ffff00',
+          lo: 33,
+          hi: 66
+        }],
+	textRenderer: customValue,
+    max: 100,
+	startAnimationTime: 4000,
+        startAnimationType: ">",
+        refreshAnimationTime: 2000,
+        refreshAnimationType: "bounce",
+	//symbol: '%',
+    title: "націсні каб даведацца праўду"
+  });
+  function animateee()
+	{
+	
+		setInterval(getRandomInt(0, 100), 3000);
+	
+	}
+	function hunder2(){bol=1;
+}
+function hunder(){bol=0;
+   //alert(g.value);
+   //answer=+prompt();
+   g.refresh(answer);  
+}
+setInterval(function() {
+           if(bol) g.refresh(getRandomInt(0, 100));
+        }, 2500);
+//setTimeout(myFunction, 3000);
+function customValue(val) {
+            if (val < 33) {
+                return 'хлусьня';
+            } else if (val > 66) {
+                return 'праўда';
+            } else if(val<=66&&val>=33){
+                return '???';
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>

@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="f:/2018HTML/2018 RFERL/gauge/raphael-2.1.4.min.js"></script>
 <script src="f:/2018HTML/2018 RFERL/gauge/justgage.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
 body, html {
     height: 100%;
@@ -48,7 +51,7 @@ h1{
 
 .teaser{
     box-shadow:3px 3px 3px 3px #555;
-    width: 650px;
+    max-width: 650px;
     text-align: left;
     padding:10px;
     font-family: sans-serif;
@@ -60,15 +63,23 @@ h1{
 }
 .answer{
     margin:30px auto;
-    width: 850px;
-    
+    max-width: 850px;
+    padding:10px;
+    display:none;
 }
 button{
-    margin :auto;
+   margin:auto!important;
+    padding: 10px;
+    background-color: seagreen;
+    border-radius:8px;
+    display: inline-block;
 }
 #gauge{
-    width: 200px;
-    height: 160px;
+    width: 250px;
+    height: 200px;
+}
+#gauge svg text{
+    font-size:14px!important;
 }
 </style>
 </head>
@@ -92,12 +103,13 @@ button{
  <div id="gauge" onclick="hunder()" class="200x160px">
        
  </div>
-     <!-- <button  onclick="hunder()">націсні каб даведацца праўду onmouseover="hunder()" onmouseout="hunder2()"</button>-->
+  
      
 
  </div>
 </div>
-<div class="answer">
+   <button onclick="hunder()" onmouseover="hunder()" onmouseout="hunder2()">націсні каб даведацца праўду</button>
+<div class="answer" id="hidden">
     <h3>Насамрэч:</h3>
         <p>Рост вайсковых патэнцыялаў суседзяў Беларусі за апошнія гады — зьява, якая мае прэцэдэнты. Аднак толькі ў часах, калі дзяржавы пасьля распаду СССР фактычна толькі паўставалі, стваралі свае ўласныя ўзброеныя сілы, перажывалі востры сацыяльна-эканамічны крызіс. Зараз рост арміяў тлумачыцца не хаосам, а наадварот — новым парадкам, парадкам канфрантацыі.</p>
         <p>Паводле дадзеных International Institute for Strategic Studies колькасьць польскага і латвійскага войскаў за тры гады не зьмянілася наагул (172 тысячы і 5 тысячаў адпаведна), колькасьць літоўскіх узброеных сілаў вырасла на 20%, украінскіх — на 19%, расейскіх — на 9%.</p>
@@ -140,7 +152,7 @@ var answer=9;//percent of true!
         startAnimationType: ">",
         refreshAnimationTime: 2000,
         refreshAnimationType: "bounce",
-	//symbol: '%',
+	symbol: '20%',
     title: "націсні каб даведацца праўду"
   });
   function animateee()

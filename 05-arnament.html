@@ -62,11 +62,11 @@
 	}
 	
 	#main{
-		background: black /*url('f:/2018HTML/2018 RFERL/shutterstock_532304212---project.jpg')*/;
+		background: #cccccc /*url('f:/2018HTML/2018 RFERL/shutterstock_532304212---project.jpg')*/;
 	
 	}
 	
-	#page-footer	{		background: #333;	}
+	#page-footer	{		background: #171b1e;	}
 		/*background: #171b1e; 
 		background: -webkit-linear-gradient(left, #171b1e, #111); 
 		background: -o-linear-gradient(right, #171b1e, #111); 
@@ -156,11 +156,7 @@
 	body aside#site-nav #site-nav-container {
 		width: 40%!important;
 	}
-		@media (min-width:769px){.video-container.desktop{display: block;}}	
-	@media (max-width:768px){.video-container.desktop{display: none! important;}}
-	@media (min-width:769px){.video-container.mobile{display: none! important;}}	
-	@media (max-width:768px){.video-container.mobile{display: block;}}
-	
+
 	/*this is new in this project*/
 	
 	#title>#title-box>h2 {
@@ -177,7 +173,7 @@
 	.flags, .flexcontainer{
 		display:flex;
 		flex-wrap: nowrap;
-		align-items: flex-end;
+		align-items: flex-start;
 		justify-content: center;
 		padding:10px;
 		text-align:center;
@@ -206,6 +202,17 @@
 		margin-top: -35px!important;
         margin-left:6px!important;
 	}
+
+	iframe{
+		width: 350px;
+		height: 350px;
+	}
+
+	@media (max-width:900px){.flexcontainer{flex-wrap: wrap-reverse;}}
+	@media (max-width:900px){.flags{flex-wrap: wrap;}}
+	@media (max-width:900px){.article .flexcontainer{flex-wrap: wrap;}}
+ .container p a{color: orangered!important;}
+ .container p a:hover{color: red!important;}
     </style>
 
     <!-- CONFIG -->
@@ -221,19 +228,19 @@
         site_nav: 0,
         site_nav_items: {
           item1: {
-           text: "Рэпартаж Свабоды  Пухавічы, дзе 9 гадоў таму трое мясцовых жыхароў забілі аднавяскоўца, але засталіся на свабодзе",
+           text: "Дзед нікому не распавядаў, што арнамэнт на сьцягу выткала ягоная сястра",
            url: "#chapter1"
           },
           item2: {
-            text: "«Усе яны па сваіх bjbgj jjnbpijpi hkibhk хатах жылі і працавалі тут. Ніхто не паехаў за краты»",
+            text: "Як прымалі сьцяг ў БССР",
             url: "#chapter2"
           },
 		  item3: {
-            text: "«Забойца падыходзіў да мяне і казаў, што адправіць усьлед за братам»",
+            text: "Думалі, што бацька ў Сыбіру, а яго расстралялі ў Воршы",
             url: "#chapter3"
           },
           item4: {
-            text: "«Пальцы яму адсеклі. Выразалі палавы орган, язык»",
+            text: "Улады пра месца расстрэлу: «Гэта было на ўзроўні чутак»",
             url: "#chapter4"
           },
 		  item5: {
@@ -308,16 +315,16 @@
   <!-- Content -->
 <main id="main">
 
-<div id="lead" class="container-big" style="font-size: 20px; text-indent:60px;">
+<div id="lead" class="container-big" style="font-size: 20px; text-indent:0px;">
 <p><b>Зіне Кацар 93 гады. Яе маці — Матруна Маркевіч, аўтарка арнамэнту на дзяржаўным сьцягу БССР і сучасным дзяржаўным сьцягу Рэспублікі Беларусі. Яе бацька — Аляксей Маркевіч, «вораг народу», расстраляны ў 1937 годзе. Пра сапраўдную гісторыю сваіх бацькоў яна даведалася, калі ўжо выйшла на пэнсію. Цяпер сям’я аднаўляе памяць пра сваіх продкаў. Карыстаючыся тым, што ўлады шануюць маці, сваякі спрабуюць паставіць помнік па бацьку — на месцы масавых расстрэлаў пад Воршай.</b></p>
 </div>
 <div class="container-big">
 	<h2 id="chapter1" style="color:#111; font-size:32px; margin: 20px auto 10px auto; ">Дзед нікому не распавядаў, што арнамэнт на сьцягу выткала ягоная сястра</h2>
 		<div class="flexcontainer">
 		<div class="firstMap">
-			<iframe allowfullscreen width="350" height="350" frameborder="0" style="border: 2px solid orange; box-shadow: 4px 4px 2px #999; border-radius: 3px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212924.9831810551!2d27.753413411773934!3d53.86934412395823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46da308e659596c9%3A0x154a97160ebbe0f2!2sPolyanka!5e0!3m2!1sen!2sby!4v1518609981681">
+			<iframe allowfullscreen frameborder="0" style="border: 2px solid orange; box-shadow: 4px 4px 2px #999; border-radius: 3px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212924.9831810551!2d27.753413411773934!3d53.86934412395823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46da308e659596c9%3A0x154a97160ebbe0f2!2sPolyanka!5e0!3m2!1sen!2sby!4v1518609981681">
 			</iframe>
-			<p style="background-color: #ffffff; display:inline-block; padding: 10px; text-align:left; font-style: italic; z-index:1; box-shadow: 2px 2px 2px #999;">Тут жыве Зіна Кацар сёньня</p>
+			<p style="background-color: #ffffff; display:inline-block; padding: 10px; text-align:left; font-style: italic; z-index:1; box-shadow: 2px 2px 2px #999;">Зіна Кацар жыве ў вёсцы Палянка</p>
 		</div>
 
 		<figure class="firstPhoto" >
@@ -345,7 +352,7 @@
 <div class="container-big">
     <figure>
         <img style="box-shadow: 4px 4px 4px #333;" data-src="https://gdb.rferl.org/E4B162FB-3EB5-4131-8D5D-CCC5F76D6A0B.jpg" data-title=""/>
-			<p class="photoCaption" style="margin-left:550px;">Малюнак арнамэнту Матруны ў рукапісе Міхаіла Кацара</p>
+			<p class="photoCaption">Малюнак арнамэнту Матруны ў рукапісе Міхаіла Кацара</p>
     </figure>
 </div>
 
@@ -355,7 +362,7 @@
 <p>Яўген Міхайлавіч Сахута працуе ў Інстытуце этнаграфіі Нацыянальнай акадэміі навук. Ён рыхтаваў да друку апошнюю кнігу Міхаіла Кацара — «Беларускі арнамент. Ткацтва. Вышыўка». У копіі рукапісу, што захавалася ў Сахуты, акурат прыгадваецца гісторыя пра Матруну Маркевіч. Ёсьць і замалёўка ручніка, зь якога быў узяты арнамэнт.</p>
     <figure>
         <img style="box-shadow: 4px 4px 4px #555;" data-src="https://gdb.rferl.org/59A6E1B7-D5EF-4EDA-BAF0-4655292FEB88.jpg" data-title=""/>
-		<p class="photoCaption" style="margin-left:300px;">Яўген Сахута захаваў рукапіс Міхаіла Кацара</p>
+		<p class="photoCaption">Яўген Сахута захаваў рукапіс Міхаіла Кацара</p>
     </figure>
 </div>
 
@@ -406,16 +413,16 @@
 <div class="container-big article">	
 	<h2 id="chapter3" style="color:#111; font-size:32px; margin: 20px auto 10px auto; ">Думалі, што бацька ў Сыбіру, а яго расстралялі ў Воршы</h2>
 	<div class="flexcontainer">
-		<div class="firstMap">
-			<iframe allowfullscreen width="350" height="350" frameborder="0" style="border: 2px solid orange; box-shadow: 4px 4px 2px #999; border-radius: 3px;" src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d85015.47076740974!2d29.6657596!3d54.8179132!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c54923f13195c7%3A0x62907789ef03c349!2sSyanno!5e0!3m2!1sen!2sby!4v1519648879620">
-			</iframe>
-			<p style="background-color: #ffffff; display:inline-block; padding: 10px; text-align:left; font-style: italic; z-index:1; box-shadow: 2px 2px 2px #999;">МАПА Сянна</p> <!--трэба разумны подпіс пад гэту мапу "Тут упершыню саткалі арнамэнт....ітд"-->
-		</div>
 
-		<figure class="firstPhoto" >
-			<img  style="box-shadow: 4px 4px 4px #333;" data-src="https://gdb.rferl.org/A9F5AFA2-AC29-46B7-94E0-91B774CA9794.jpg" data-title=""/>
-			<p class="photoCaption">Дзіна і Зіна Кацары зьбіраюць дакумэнты пра сваіх маці і бацьку</p>
-		</figure>
+			<div class="firstMap">
+					<iframe allowfullscreen  frameborder="0" style="border: 2px solid orange; box-shadow: 4px 4px 2px #999; border-radius: 3px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d598932.5222094817!2d29.68306613644339!3d54.63434110290916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46cfe24eec6b59bb%3A0xa5ba484c703cfdf3!2sOrsha!5e0!3m2!1sen!2sby!4v1518609752992">
+					</iframe>	
+				</div>
+
+				<figure class="firstPhoto" >
+						<img  style="box-shadow: 4px 4px 4px #333;" data-src="https://gdb.rferl.org/A9F5AFA2-AC29-46B7-94E0-91B774CA9794.jpg" data-title=""/>
+						<p class="photoCaption">Дзіна і Зіна Кацары зьбіраюць дакумэнты пра сваіх маці і бацьку</p>
+					</figure>
 	</div>
 </div>
 
@@ -438,17 +445,22 @@
 <div class="container">
 	<p>Аляксей Маркевіч быў багатым чалавекам на вясковыя меркі. Вырабляў са скуры боты і чамаданы, гнаў дзёгаць. Сям’я мела вялікі дом. Усяму гэтаму зайздросьцілі суседзі.</p>
 	<p>«Сусед наш Саўка пісаў даносы на бацьку, — кажа Зіна Аляксееўна. — Людзём было зайздросна. Ляксея такая пабудова добрая, і дзелавы быў на ўсе рукі».</p>
-	<p>Зьвесткі пра прысуд яму ёсьць у <a href="http://stalinlist.org/node/57712" target="_balnk">«Картатэцы Сталіна»</a>. Арыштаваны 10 кастрычніка за антысавецкую агітацыю. Асуджаны «тройкай» 15 кастрычніка ў Воршы. Расстраляны 2 лістапада 1937 году.</p>
+	<figure>
+			<img style="box-shadow: 4px 4px 4px #333;" data-src="https://gdb.rferl.org/2F8F2F79-85AB-48F4-BB6D-1297EF0E3EB1.jpg" data-title=""/>
+		<p class="photoCaption" style="margin-top:20px;" >Аляксей і Матруна Маркевічы</p>
+	</figure>
+
+	<p>Зьвесткі пра прысуд яму ёсьць у <a href="http://stalinlist.org/node/57712" target="_balnk" >«Картатэцы Сталіна»</a>. Арыштаваны 10 кастрычніка за антысавецкую агітацыю. Асуджаны «тройкай» 15 кастрычніка ў Воршы. Расстраляны 2 лістапада 1937 году.</p>
 	<p>Пасьля арышту бацькі Матруна зь дзецьмі зьбегла з дому і хавалася ў сваякоў. Чатыры наступныя гады, пакуль не пачалася вайна, да іх ставіліся як да сям’і «ворага народу». Іх адпраўлялі рыць канавы і прыбірацца ў лесе. За працу нічога не плацілі. Ад голаду памерлі двое з шасьці дзяцей.</p>
 <p>
 Перасьледы Маркевічаў скончыліся толькі пасьля вайны. Суседа Саўку, які пісаў усе даносы, асудзілі. Яму далі 8 гадоў за тое, што рваў каласкі на калгасным полі.</p>
 </div>
 
 <div class="container-big">
-		<div class="video-container" data-author="Глядзець відэа" data-title="" data-time="0:41"
-	data-aspect-ratio="HD" data-poster=""
+		<div class="video-container" data-author="Глядзець відэа" data-title="Верш у памяць пра забітага бацьку" data-time="0:41"
+	data-aspect-ratio="HD" data-poster="https://gdb.rferl.org/43E3C3A7-8B8C-4B07-BD95-D12DCCD8D7A8.jpg"
 	data-src="https://rfe.pangea-cms.com/videoroot/Pangeavideo/2018/02/a/a5/a5f30be8-868f-4fa0-8ded-80ca057875f9_fullhd.mp4"></div>
-	 </div>
+</div>
 
 <div class="container" >
 <figure>
@@ -458,18 +470,81 @@
 </div>
 
 
+<div class="container-big article">	
+	<h2 id="chapter4" style="color:#111; font-size:32px; margin: 20px auto 10px auto; ">Улады пра месца расстрэлу: «Гэта было на ўзроўні чутак»</h2>
+	<div class="flexcontainer">
+			<div class="firstMap">
+					<iframe allowfullscreen frameborder="0" style="border: 2px solid orange; box-shadow: 4px 4px 2px #999; border-radius: 3px;" src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d85015.47076740974!2d29.6657596!3d54.8179132!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c54923f13195c7%3A0x62907789ef03c349!2sSyanno!5e0!3m2!1sen!2sby!4v1519648879620">
+					</iframe>
+		
+				</div>
+				<figure class="firstPhoto" >
+						<img  style="box-shadow: 4px 4px 4px #333;" data-src="https://gdb.rferl.org/5FC81A47-7953-40F7-B82C-DDC17883AC66.jpg" data-title=""/>
+						<p class="photoCaption">Матруне Маркевіч усталявалі памятны знак у Сяньне ў 2015 годзе</p>
+					</figure>
+	</div>
+</div>
 
 
+<div class="container article">	
+		<p>У 2015 годзе ў цэнтры Сянна адкрылі помнік Матруне Маркевіч. У краязнаўчым музэі ёй прысьвечаны асобны стэнд. Калі стала вядома, што яна аўтарка арнамэнту на дзяржаўным сьцягу, Матруна зрабілася адной з гераіняў раёну. Сваякоў цяпер запрашаюць на афіцыйныя імпрэзы, у дачкі Зіны Аляксееўны і ўнучкі Дзіны Пракопаўны часта бяруць інтэрвію.</p>
+		<p>Зусім па-іншаму ўшанаваная памяць іхнага бацькі і дзеда. Хоць у адказе КДБ напісана, што ён расстраляны ў Воршы, ніхто ня ведае, дзе ён пахаваны. Афіцыйна вядома пра два месцы расстрэлаў на ўскраінах гораду — гэта Кабыляцкая гара і лес уздоўж Магілёўскай шашы. Але помніка загінулым няма ні ў водным месцы.<br />
+			<br />
+			Яшчэ ў 1982 годзе аршанскія ўлады прызналі, што на Кабыляцкай гары і каля Магілёўскай шашы НКВД праводзіла расстрэлы. Каля былой вёскі Кабылякі выявілі парэшткі 50 чалавек з адтулінамі ў лобавай частцы чарапоў.</p>
+			<p>«Усе жыхары пацьвярджаюць, што расстрэлы савецкіх людзей праводзіліся ў 1937-1939 гадах органамі НКУС, — напісана ў акце, які склалі пракурор, лекар-судмэдэкспэрт, прадстаўнікі міліцыі, вайсковага камісарыяту і Беларускага таварыства аховы помнікаў гісторыі і культуры. — У гэты пэрыяд лес на так званай „Кабыляцкай гары“ быў месцам масавых расстрэлаў ні ў чым не вінаватых людзей, гэтаксама як лясны масіў уздоўж Магілёўскай шашы ў в. Паддубцы».<br />
+				<br />
+				Нашчадкі Матруны і Аляксея ўпершыню пабывалі на Кабыляцкай гары ў красавіку 2017 году.<br />
+				<br />
+				«Там жудаснае месца! Лес, бур’ян, сучча», — так апісвае Зіна Аляксееўна месца пад Воршай, дзе, верагодна, ляжыць яе бацька.</p>
+	</div>
+
+	<div class="container-big">	
+			<figure>
+					<img style="box-shadow: 4px 4px 4px #333;" data-src="https://gdb.rferl.org/75D591EA-0727-4D7F-993A-D26ED4FAC58A.jpg" data-title=""/>
+				<p class="photoCaption" style=""> Валун з памятнай шыльдай на Кабыляцкай гары паставілі ў 1994 годзе. Але з таго часу шыльду некалькі разоў скрадалі</p>
+			</figure>
+	</div>
+
+	<div class="container">
+			<p>У 1994 годзе аршанскія ўлады паставілі тут помнік ахвярам рэпрэсіяў — валун з шыльдай. Школьнікі з бліжэйшай вёскі Андрэеўшчыны пэўны час даглядалі мясьціну. Паводле Ігара Казьмерчака, кіраўніка аршанскай арганізацыі Партыі БНФ, цяпер улады не даглядаюць Кабыляцкую гару. Двойчы на год — на Радаўніцу і на Дзяды — тут прыбіраюцца сваякі рэпрэсаваных і гарадзкія актывісты. Таксама няма шыльды на валуне — яе некалькі разоў выкрадалі.</p>
+			<p>Аднак у райвыканкаме Свабодзе заявілі, што за Кабыляцкай гарой сочаць і прыбіраюць там сьмецьце. На пытаньне пра мэмарыял на гэтым месцы <b>Ганна Сьвятлова</b>, кіраўніца аддзелу культуры Аршанскага райвыканкаму, сказала, што пакуль дакладна невядома, ці на Кабыляцкай гары ёсьць пахаваньні.</p>
+			<p>— Іх, разумееце, узаконіць трэба, могілкі. Праводзіць яшчэ дасьледаваньні, ці насамрэч там пахаваныя людзі. Ці там проста расстрэльвалі, але там жа не пахаваны ніхто.<br />
+			<b>— Невядома, ці там месца масавых пахаваньняў?</b><br />
+			— Так. Месца расстрэлу, хутчэй за ўсё. Як кажуць нашыя гісторыкі. Пахаваньняў там няма.<br />
+			<b>— Быў жа акт 1982 году, дзе фармулёўка была «пахаваныя».</b><br />
+			— Не, там не пахаваныя, а расстраляныя.<br />
+			<b>— У пачатку 1990-х былі матэрыялы ў друку, апытвалі сьведкаў, якія распавядалі, што там насамрэч расстрэльвалі людзей.</b>b><br />
+			— Гэта было на ўзроўні чутак.</p>
+	</div>
+
+	<div class="container-big">
+			<div class="video-container" data-author="Глядзець відэа" data-title="Месца масавых расстрэлаў пад Воршай" data-time="1:14"
+		data-aspect-ratio="HD" data-poster="https://gdb.rferl.org/62EDEB7F-3EF9-4A6D-AFC0-DF738E43ECE1.jpg"
+		data-src="https://rfe.pangea-cms.com/videoroot/Pangeavideo/2018/02/1/1d/1da48b34-72cc-4fe8-b407-d1873f99726e_fullhd.mp4"></div>
+	</div>
+
+	<div class="container">
+			<p>Цяпер, па словах чыноўніцы, праводзяцца «гістарычныя дасьледаваньні». Музэй гісторыі і культуры Воршы працуе з архівамі, каб пацьвердзіць, ці Кабыляцкая гара была месцам масавых расстрэлаў і пахаваньняў у сталінскія часы.</p>
+			<p>Пакуль выканкам шукае новыя доказы, Кабыляцкая гара ператвараецца ў народны мэмарыял. З кожным годам вакол валуна зьяўляецца новыя крыжы з імёнамі рэпрэсаваных і забітых пад Воршай. Некаторыя вешаюць мэдальёны з фатаздымкамі сваіх продкаў. Гэтаксама плянуюць зрабіць Кацары-Маркевічы.</p>
+			<p>«Значыць, трэба самім рабіць. Іншага выйсьця ў нас няма», — кажа Дзіна Пракопаўна.</p>
+	</div>
+
+<div class="container-big">
+		<figure>
+				<img style="box-shadow: 4px 4px 4px #333;" data-src="https://gdb.rferl.org/B05DF863-692E-4E78-A908-A3E027349A6E.jpg" data-title=""/>
+		</figure>
+
+	</div>
 
 <!--THE END!!-->
 
 </main>
 	  <!-- Footer -->
-    <footer id="page-footer" style="border: none; margin-top: 0; padding-top: 0;" >
-      <div class="container" style="background: #333!important; box-shadow: none; ">
+    <footer id="page-footer" style="border: solid  #171b1e; 2px; margin-top: 0; padding-top: 0;" >
+      <div class="container" style="background:  #171b1e;!important; box-shadow: none; ">
         <div class="footer-block">
 				<p class="footer-description" style="color: #fff!important;">
-				Аўтар: АТ<br/>Фота: АШ<br/>Вёрстка: ZV</p><br/>
+				Над праектам працавалі: <br/>Юлія Коцкая<br/> Антон Трафімовіч<br/> Андрэй Шаўлюга<br/> Максім Лаўрэцкі<br/>Вёрстка: Зьміцер Васількоў</p><br/>
         <div class="footer-block">
           <div id="social-profiles"></div>
         </div>
